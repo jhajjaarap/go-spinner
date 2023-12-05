@@ -103,8 +103,6 @@ func (sp *Spinner) writer() {
 		select {
 		case <-sp.runChan:
 			return
-		default:
-			sp.animate()
 		}
 	}
 }
